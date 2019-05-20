@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tip Calculator</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Tip Calculator</h1>
+
+        <div id="calculator">
+
+            <form>
+                <p>How much was your bill?</p>
+                <input id="billamt" type="text" placeholder="Bill Amount">
+
+                <p>How was your service?</p>
+                <select id="serviceQual">
+                    <option disabled selected value="0">-- Choose an Option --</option>
+                    <option value="0.3">30&#37; &#45; Outstanding</option>
+                    <option value="0.2">20&#37; &#45; Good</option>
+                    <option value="0.15">15&#37; &#45; It was Okay</option>
+                    <option value="0.1">10&#37; &#45; Bad</option>
+                    <option value="0.05">5&#37; &#45; Terrible</option>
+                </select>
+            </form>
+
+            <p>How many people are sharing the bill?</p>
+            <input type="text" id="peopleamt" placeholder="Number of People">people <br><br>
+            <button type="button" id="calculate"><i class="fas fa-calculator"></i> Calculate!</button><br>
+            
+        </div>
+        <!-- Calculator End -->
+        <div id="totalTip">
+            <sup>$</sup><span id="tip"></span><small id="each">each</small>
+        </div>
+        <!-- totalTip end -->
+    </div>
+    <!-- container end -->
+    <script type="text/javascript" src="tipcalculator.js"></script>
+
+</body>
+</html>
